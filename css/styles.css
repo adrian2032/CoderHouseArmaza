@@ -1,7 +1,4 @@
-img{
-    width: 350px;
-    height: 300px;
-}
+
 
 .navegacion{
     display: grid;
@@ -13,8 +10,14 @@ img{
 .navegacion__icono{
     width: 60px;
     height: 60px;
+    transition: 1s;
     
 }
+
+.navegacion__icono:hover{
+    transform: rotate(360deg);
+}
+
 
 .header{
     background-color: pink;
@@ -67,12 +70,31 @@ img{
     font-weight: bold;
 }
 
+.producto__titulo:hover{
+    transform: skew(15deg);
+    transform: rotate(10deg);
+}
+
 .cuadro__titulo{
     font-size: xx-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     color: crimson;
     background-color: yellow;
+}
+
+.cuadro__producto p {
+    padding: 20px;
+    margin: 20px;
+}
+
+.cuadro__imagen{
+    width: 350px;
+    height: 300px;
+}
+
+.cuadro__imagen:hover{
+    transform: scale(1.20);
 }
 
 .atencionCliente{
