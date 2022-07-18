@@ -1,19 +1,21 @@
-img{
-    width: 350px;
-    height: 300px;
-}
+
 
 .navegacion{
-    text-align: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: pink;
 }
 
 .navegacion__icono{
     width: 60px;
     height: 60px;
+    transition: 1s;
+    
 }
 
-.navegacion__link{
-    margin: 0 auto;
+.navegacion__icono:hover{
+    transform: rotate(360deg);
 }
 
 
@@ -25,12 +27,36 @@ img{
 }
 
 .cuadro{
-    background-color: aqua;
-    padding: 5px 5px 5px 5px;
-    border-top: solid red;
-    border-bottom: solid red;
-    border-left: solid black;
-    border-right: solid black;
+    display: grid;
+}
+
+@media (min-width: 320px){
+    .cuadro{
+        grid-template-columns: auto; 
+        background-color: aqua;
+
+    }
+}
+
+@media (min-width: 768px){
+    .cuadro{
+        grid-template-columns: auto auto;
+        background-color: aqua;
+        
+    }
+}
+
+@media (min-width: 1024px){
+    .cuadro{
+        grid-template-columns: auto auto auto;
+        background-color: aqua;
+    
+        
+    }    
+}
+
+.cuadro div{
+    border: 1px solid black;
 }
 
 .letra{
@@ -38,14 +64,67 @@ img{
     font-size: medium;
 }
 
+.producto__titulo{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
 
+.producto__titulo:hover{
+    transform: skew(15deg);
+    transform: rotate(10deg);
+}
 
 .cuadro__titulo{
     font-size: xx-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    color: crimson;
+    background-color: yellow;
+}
+
+.cuadro__producto p {
+    padding: 20px;
+    margin: 20px;
+}
+
+.cuadro__imagen{
+    width: 350px;
+    height: 300px;
+}
+
+.cuadro__imagen:hover{
+    transform: scale(1.20);
+}
+
+.atencionCliente{
+    display: grid;
+    justify-content: start;
+    grid-template-columns: auto auto;
+}
+
+@media (min-width: 768px){
+    .atencionCliente{
+        justify-content: center;
+    }
+}
+.ubicacion__propiedades{
+    background-color: aquamarine;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+
+.atencionCliente__maps{
+    width: 300px;
+    height: 300px;
 }
 
 footer{
     background-color: darkorange;
+}
+
+.atencionCliente__imagen{
+    width: 25px;
+    height: 25px;
 }
