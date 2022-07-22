@@ -5,118 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-            <nav class="navegacion">
-                <div>
-                <a href="Index.html"> <img class="navegacion__icono" src="sources/play_gaming_game_pacman_icon_225001.ico"  width="100"> </a>
-                </div>    
-                <div>
-                <a class="navegacion__link letra" href="pages/notebook.html">Notebook</a>
-                <img class="navegacion__icono" src="sources/notebookIcono.jpg" alt="icono notebook">
-                </div>
-                <div>
-                <a class="navegacion__link letra" href="pages/pc_escritorio.html">PC escritorio</a>
-                <img class="navegacion__icono" src="sources/pcEscritorioIcono.jpg" alt="icono pc escritorio">
-                </div>
-                <div>
-                <a class="navegacion__link letra" href="pages/accesorios.html">Accesorios</a>
-                <img class="navegacion__icono" src="sources/impresoraIcono.jpg" alt="icono Impresoria">
-                </div>
-                <div>
-                <a class="navegacion__link letra" href="pages/monitores.html">Monitores</a>
-                <img class="navegacion__icono" src="sources/MonitorIcono.jpg" alt="icono impresoras">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html"> Inicio</a>
+                    </div>    
+                    <ul class="nav navbar-nav">
+                        <li><a href="pages/pc_escritorio.html">PC escritorio</a></li>
+                        <li><a href="pages/accesorios.html"> Accesorios</a></li>
+                        <li><a href="pages/notebook.html">Notebook</li>
+                        <li><a href="pages/monitores.html">Monitores</li>
+                    </ul>
                 </div>
             </nav> 
     </header>
 
     <main class="main">
-        <section>
-        <h1 class="cuadro__titulo"> Ofertas !</h1>
-        </section>
-        <section class="cuadro">
-                    <div class="cuadro__producto letra ">
+        <h1>Nuestras ofertas!</h1>
+        <section class="row">
+            <div>
+                <h1>Nuestras ofertas!</h1>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-xs-10  letra ">
                         <p class="producto__titulo">Kanji Slim Tamura</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
                         <img class="cuadro__imagen" src="sources/notebook.jpg" alt="notebook marca kanji">
                     </div>
-                    <div class="cuadro__producto letra ">
+                    <div class="col-md-4 col-sm-6 col-xs-10 letra ">
                         <p class="producto__titulo">Acer FHD </p>
                         <p>Lorem ipsum dolor sit amert, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
                         <img img class="cuadro__imagen" src="sources/notebookACER.jpg" alt="notebook marca acer">   
                     </div>
-                    <div class="cuadro__producto letra ">
+                    <div class="col-md-4 col-sm-6 col-xs-10 letra ">
                         <p class="producto__titulo">Pc amd Ryzen</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
                         <img img class="cuadro__imagen" src="sources/notebookASUS.jpeg" alt="notebook  con procesador ryzen">
-                    </div class="cuadro__producto letra ">
-                    <div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-10 letra ">
                         <p class="producto__titulo"> Noteebok lenovo </p>
                         <p>Lorem ipsum dolor sit amert, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
                         <img img class="cuadro__imagen" src="sources/notebookbangho.jpg" alt="notebook marca asus">   
                     </div>
-                    <div class="cuadro__producto letra ">
+                    <div class="col-md-4 col-sm-6 col-xs-10 letra ">
                         <p class="producto__titulo"> Nootebook BANGHO </p>
                         <p>Lorem ipsum dolor sit amert, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
                         <img img class="cuadro__imagen" src="sources/notebook lenovo.webp" alt="notebook marca lenovo">
                     </div>
-                    <div class="cuadro__producto letra ">
+                    <div class="col-md-4 col-sm-6 col-xs-10 letra ">
                         <p class="producto__titulo">Nootebook gammer </p>
                         <p>Lorem ipsum dolor sit amert, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
                         <img img class="cuadro__imagen" src="sources/notebookIDEAPAD.jpg" alt="notebook full full">   
                     </div>
         </section>
-        <section class="atencionCliente letra ">
-            <div class=" ubicacion__propiedades letra">
-                <p> Ubicacion para retirar en nuestro local >>></p> <iframe class="atencionCliente__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.4950518416895!2d-64.1893494853975!3d-31.400483902623794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298698cbcf285%3A0x4b7887386db6b9b1!2sSmarts%20Tienda%20Tecno!5e0!3m2!1ses-419!2sar!4v1655319544451!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-            </div>
 
-            <div>
+        <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p> Ubicacion para retirar en nuestro local >>></p> <iframe class="atencionCliente__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.4950518416895!2d-64.1893494853975!3d-31.400483902623794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298698cbcf285%3A0x4b7887386db6b9b1!2sSmarts%20Tienda%20Tecno!5e0!3m2!1ses-419!2sar!4v1655319544451!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-body">
                 <img class="atencionCliente__imagen" src="sources/camioncito.png" alt="imagen de entrega">
                 <p>Envios a todo el país</p>
-
+              </div>
+              <div class="panel-body">
                 <img class="atencionCliente__imagen" src="sources/tarjeta.png" alt="pago en cuotas">
                 <p>Ahora 12. En todos los productos</p>
-
+              </div>
+              <div class="panel-body">
                 <img class="atencionCliente__imagen" src="sources/whatsapp.png" alt="whats app">
                 <p>Atencion personalizada</p>
-
+              </div>
             </div>
-
-        </section>
-
+          </div>
     </main>
 
     <footer>
-        <h2>Contactanos por cualquier consulta, computadoras personalizadas, service, etc.</h2>
-        <form method="post">
-            <div>
-                <label> Nombre</label>
-                <input type ="text" name="firstname">
-            
-                <label> Apellido</label>
-                <input type="text" name="lastname">
-            
-
+        <form action="/action_page.php">
+            <div class="form-group">
+                <p><label>Contactanos por cualquier consulta, computadoras personalizadas, service, etc.</label></p>
+                <label for="text">Nombre</label>
+                <input type="text" class="form-control" id="name">
             </div>
-            <div>
-                <label> telefono</label>
-                <input type="number" name="lastname">
-          
-                <label>Correo electronico</label>
-                <input type="email" name="lastname">
+            <div class="form-group">
+              <label for="text">Apellido:</label>
+              <input type="text" class="form-control" id="surname">
             </div>
-          
-            <div>
-                <label>comentarios</label>
-                <textarea name="comentarios" placeholder="escribinos y nos pondremos en contacto" rows="5" cols="60" maxlength="200"></textarea>
-                <input type="submit" value="Enviar">
-            </div>
-            
-
-        </form>
+            <div class="form-group">
+                <label for="comment">comentarios:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+            <button type="submit" class="btn btn-default">Enviar</button>
+          </form>
 
     </footer>
 </body>
