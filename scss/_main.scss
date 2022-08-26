@@ -1,0 +1,184 @@
+@import "variables";
+
+.cuadro{
+    .cuadro__imagen{
+        width: 250px;
+        height: 200px;
+    }
+    .cuadro__imagen--minipc{
+        width: 100px;
+        height: 75px;
+    }
+    .cuadro__imagen:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media(max-width:640px){
+    .cuadro__imagen{
+        width: 150px;
+        height: 100px;
+    }
+}
+
+.producto--descripcion{
+    font-size: small;
+    height: 16rem;
+    text-align: center;
+
+}
+
+@media(max-width:768px){
+    .producto--descripcion{
+        height: 8rem;
+    }
+}
+
+@media(max-width:468px){
+    .producto--descripcion{
+        height: 12rem;
+    }
+}
+
+@media(min-width:768px){
+    .producto__espacio--monitor{
+        height: 50rem;
+    }
+}
+
+.cuadro--info{
+    font-size: x-small;
+    margin-top: 0.3rem;
+    text-align: start;
+}
+
+.producto__espacio{
+    height: 60rem;
+}
+
+@media(max-width:768px){
+    .producto__espacio{
+    border-top: 0.16rem solid black;
+    padding: 0.3rem;
+    margin-top: 0.6rem;
+    height: 54rem;
+
+    }
+}
+
+@media(max-width:468px){
+    .producto__espacio{
+        border-top: 0.16rem solid black;
+        padding: 0.3rem;
+        margin-top: 0.6rem;
+        height: 58rem;
+    }
+}
+
+.producto__titulo{
+    text-align: $letraAlineado;
+    font-size: $letraTamano;
+    font-style: $letraTipo;
+    font-family: $letra;
+    font-weight: bold;
+}
+
+@media(max-width:468px){
+    .producto__titulo{
+        text-align: center;
+        font-size: $letraTamano;
+        font-style: $letraTipo;
+        font-family: $letra;
+        font-weight: bold;
+    }
+    .cuadro--precio--oferta{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .cuadro--precio{
+        text-align: center;
+    }
+    .cuadro__imagen{
+        transform: scale(0.8);
+    } 
+}
+
+.producto__titulo:hover{
+    transform: skewY(5deg);
+}
+
+.atencionCliente__imagen{
+    width: 65px;
+    height: 65px;
+}
+
+
+.atencionCliente__maps{
+    width: 300px;
+    height: 300px;
+}
+
+.cuadro{
+    padding: 1rem;
+}
+
+.cuadro__imagen--espacio{
+    padding: 1rem;
+}
+
+.cuadro--divPrecio{
+    text-align: center;
+}
+
+
+/* EXTEND */
+
+.cuadro--precio{
+    width: 7rem;
+    height: 3rem;
+    background-color: $colorNAV;
+    color: black;
+    border-radius: 5rem;
+    border: 0.1rem solid black;
+}
+
+
+.cuadro--precio--oferta{
+    @extend.cuadro--precio;
+    background-color: rgb(250, 243, 157);
+    color: $colorBG
+}
+
+/* MIXIM */
+
+@mixin tituloPrecio($color, $tamanoFuente, $align) {
+    font-size: $tamanoFuente;
+    color: $color;
+    text-align: $align;
+    font-weight: bold;
+}
+
+
+
+/* llamo al mixim creado*/
+
+.cuadro--precio--titulo{
+    @include tituloPrecio($colorBG, 2rem, left);
+}
+
+
+@media(max-width:468px){
+    .cuadro--precio--titulo{
+        @include tituloPrecio($colorBG, 2rem, center )
+    }
+}
+
+.intro{
+    text-align: center;
+}
+
+
+
+

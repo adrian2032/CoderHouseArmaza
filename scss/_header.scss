@@ -1,0 +1,23 @@
+.navegacion__icono{
+    width: 60px;
+    height: 60px;   
+}
+
+.barraNavegacion{
+    display:grid;
+    text-align: center;
+    grid-template-rows: auto 
+                        auto
+                        auto
+                        auto;
+    background-image: linear-gradient(to left, lightgray, $colorNAV);
+    font-size: $letraTamano;
+    //padding: 1rem;
+    //margin: 1rem;
+}
+
+@media(min-width:768px){
+    .barraNavegacion{
+    grid-template-columns: auto auto auto auto;
+    }
+}

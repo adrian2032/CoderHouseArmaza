@@ -1,0 +1,108 @@
+img{
+    width: 350px;
+    height: 300px;
+}
+
+.navegacion{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: pink;
+}
+
+.navegacion__icono{
+    width: 60px;
+    height: 60px;
+    
+}
+
+.header{
+    background-color: pink;
+    position: sticky;
+    top: 1px;
+    
+}
+
+.cuadro{
+    display: grid;
+}
+
+@media (min-width: 320px){
+    .cuadro{
+        grid-template-columns: auto; 
+        background-color: aqua;
+
+    }
+}
+
+@media (min-width: 768px){
+    .cuadro{
+        grid-template-columns: auto auto;
+        background-color: aqua;
+        
+    }
+}
+
+@media (min-width: 1024px){
+    .cuadro{
+        grid-template-columns: auto auto auto;
+        background-color: aqua;
+    
+        
+    }    
+}
+
+.cuadro div{
+    border: 1px solid black;
+}
+
+.letra{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.producto__titulo{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.cuadro__titulo{
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: crimson;
+    background-color: yellow;
+}
+
+.atencionCliente{
+    display: grid;
+    justify-content: start;
+    grid-template-columns: auto auto;
+}
+
+@media (min-width: 768px){
+    .atencionCliente{
+        justify-content: center;
+    }
+}
+.ubicacion__propiedades{
+    background-color: aquamarine;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+
+.atencionCliente__maps{
+    width: 300px;
+    height: 300px;
+}
+
+footer{
+    background-color: darkorange;
+}
+
+.atencionCliente__imagen{
+    width: 25px;
+    height: 25px;
+}

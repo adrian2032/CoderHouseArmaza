@@ -4,80 +4,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Document</title> 
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="navegacion"></div>    
-            <nav class="navegacion">
-                <a href="../Index.html"> <img class="navegacion__icono" src="../sources/play_gaming_game_pacman_icon_225001.ico"  width="100"> </a>
-                <a class="navegacion__link letra" href="notebook.html">Notebook</a>
-                <a class="navegacion__link letra" href="pc_escritorio.html">PC de pc_escritorio</a>
-                <a class="navegacion__link letra" href="accesorios.html">Accesorios</a>
-                <a class="navegacion__link letra" href="monitores.html">Monitores</a>
-            </nav>
-        </div> 
-
+    <header>
+  <!-- Grey with black text -->
+      <nav class="barraNavegacion">
+          <div class="barraNavegacion_item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </div>
+          <div class="barraNavegacion__item">
+            <a class="barraNavegacion__link" href="/pages/accesorios.html">Accesorios</a>
+          </div>
+          <div class="barraNavegacion__item">
+            <a class="barraNavegacion__link" href="/pages/monitores.html">Monitores</a>
+          </div>
+          <div class="barraNavegacion__item">
+            <a class="barraNavegacion__link" href="/pages/pc_escritorio.html">Pc de escritorio</a>
+          </div>
+      </nav>
     </header>
 
-    <main>
-        <section>
-            <h1 class="cuadro__titulo"> Impresoras </h1>
+    <main  class="cuadro">
+      <section>
+        <div class="row intro">
+          <h2 class="col-xs-12"> Nuestras ofertas</h2>
+        </div>
+
+        
+      </section>
+      <section class="row cuadro">
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo"> Impresora Hp Smart Tank 515 Multifuncion Sistema Continuo Wifi </p>
+                        <p class="producto--descripcion">Esta impresora de tanque de tinta de alta capacidad ofrece calidad garantizada y hasta 12 000 páginas en negro o hasta 8000 páginas en color.8 Obtenga conexiones más veloces con banda dual Wi-Fi1 y una impresión móvil sencilla con la aplicación HP Smart.2 Impresora apta para seguridad dinámica. Destinada solo al uso con cartuchos que usen un chip original HP. Los cartuchos que usan un chip de otro fabricante podrían no funcionar y los que funcionen, podrían no hacerlo en el futuro.</p>
+                        <div class="cuadro__imagen--espacio">
+                          <img class="cuadro__imagen" src="../sources/accesorio1.jpg" alt="notebook marca kanji">
+                        </div>
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li>Dimensiones: 447 x 373 x 158 mm, peso: 7.25ks </li>
+                            <li> Tecnologia de impresion: Inyeccion termina de tinta HP</li>
+                            <li>Resolucion maxima de impresion: 4800 x 1200 dpi, velocidad de impresion: ISO hasta 11 ppm</li>
+                          </ul>
+                          <p class="cuadro--precio--titulo"> Precio </p>
+                          <p class="cuadro--precio"> $49.500</p>
+                        </div>
+                </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo">Impresora Hp Ink Tank 415 Multifuncion Sistema Continuo Wifi Panel Lcd </p>
+                        <p class="producto--descripcion"> Imprimí archivos, escaneá documentos y hacé todas las fotocopias que necesites con esta impresora multifunción HP, siempre lista para facilitar tu rutina de trabajo o estudio. Perfecta para el hogar o la oficina Al ser a tinta, te permite lograr impresiones de gran calidad con colores vivos y degradados suaves. Ocupa poco espacio y es fácil de manejar, lo que la hace ideal no solo para el trabajo, sino también para las tareas escolares de los más pequeños.</p>
+                        <div class="cuadro__imagen--espacio">
+                          <img img class="cuadro__imagen" src="../sources/accesorio2.jpg"" alt="notebook marca acer">   
+                        </div>
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li>Caracteristicas y uso imprimir, escanear, copiar </li>
+                            <li>Tipo de Impresión: Inyección de tinta a color </li>
+                            <li>Velocidad de impresión (ISO): Negro hasta 8 ppm; Color hasta 5 ppm</li>
+                            <li> Capacidad: De 400 a 800 páginas mensuales </li>
+                          </ul>
+                          <p class="cuadro--precio--titulo"> Precio </p>
+                          <p class="cuadro--precio">$82.000</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo">Parlante 2.0 Sp-Q160 Naranja - Genius</p>
+                        <p class="producto--descripcion"> Sonido de la mejor calidad con una buena potencia, incluye bluetooth </p>
+                        <div class="cuadro__imagen--espacio">
+                          <img img class="cuadro__imagen" src="../sources/accesorio3.jpg" alt="notebook  con procesador ryzen">
+                        </div>  
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li> Especificaciones generales: Versión de bluetooth: 5.1, Potencia de salida (W): 4.2</li>
+                            <li> Dimensiones: (cm): 8,6 x 6,9 x 4,0, Peso (kilogramos): 0,209 </li>
+                            <li> Perfiles de bluetooth: A2DP 1.3, AVRCP 1.6, Frecuencia bluetooth: 2402 MHz - 2480 MHz</li>
+                          </ul>
+                          <p class="cuadro--precio--titulo"> Precio </p>
+                          <p class="cuadro--precio"> $53.000</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo"> Auricular Gamer Redragon Con Mic - Icon - Plug Y Usb - Negro </p>
+                        <p class="producto--descripcion"> Auriculares de la mejor calidad, sonido de alta definicion, regulable, con bluetooth y microfono incorporado </p>
+                        <div class="cuadro__imagen--espacio">
+                          <img img class="cuadro__imagen" src="../sources/accesorio4.jpg" alt="notebook marca asus">   
+                        </div>
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li>TIPO DE SALIDA:7.1 Virtual via USB, stereo por ficha 3.5.</li>
+                            <li> TIPO DE COPAS:Supraaurales (este tipo de auricular cubre la mayor parte del pabellón auditivo). Tacto suave y con aislamiento pasivo</li>
+                            <li> MATERIAL DE DIADEMA:Metálica, flexible y regulable, recubierto de cuerina y anclajes de plástico reforzado, almohadilla de tela sintética.</Li>
+                            <li> TIPO DE MICRÓFONO Y CAPTACIÓN:Omnidireccional, desmontable con conexión 3.5 mm.</li>
+                          </ul>
+                          <p class="cuadro--precio--titulo"> Precio </p>
+                          <p class="cuadro--precio"> $12.785</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo"> Parlante Portatil Bluetooth 4.2 (Flip 5) Negro 20w Rms - Resistente Al Agua - 12 Hs De Bateria - Jbl </p>
+                        <p class="producto--descripcion">Suena mejor que nunca: Siente tu música. Los nuevos drivers de estilo competición del Flip 5 ofrecen un alto rendimiento. Disfruta de unos increíbles bajos en un formato muy compacto. 12 horas de reproducción No te preocupes por cosas sin importancia como cargar la batería. El Flip 5 te ofrece más de 12 horas de reproducción. Disfruta de una música más potente, durante más tiempo y con el famoso sonido JBL.</p>
+                        <div class="cuadro__imagen--espacio">
+                          <img class="cuadro__imagen" src="../sources/accesorio5.jpg" alt="notebook marca lenovo">
+                        </div>
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li>TIPO DE SALIDA:7.1 Virtual via USB, stereo por ficha 3.5.</li>
+                            <li> TIPO DE COPAS:Supraaurales (este tipo de auricular cubre la mayor parte del pabellón auditivo). Tacto suave y con aislamiento pasivo</li>
+                            <li> MATERIAL DE DIADEMA:Metálica, flexible y regulable, recubierto de cuerina y anclajes de plástico reforzado, almohadilla de tela sintética.</Li>
+                            <li> TIPO DE MICRÓFONO Y CAPTACIÓN:Omnidireccional, desmontable con conexión 3.5 mm.</li>
+                          </ul>
+                          <p class="cuadro--precio--titulo"> Precio </p>
+                          <p class="cuadro--precio"> 25.000</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo"> Silla Gamer Marvo Ch106 Negro </p>
+                        <p class="producto--descripcion">El diseño extraalto de la serie CH-106 se centra en la ergonomía perfecta y se establece por igual en un alto nivel de funcionalidad. Su diseño deportivo protege también las muñecas, el cuello y el cuello, los hombros y los brazos. Ofrece una sujeción tan firme como si estuviera en un coche deportivo. Las almohadillas de espuma fría resistentes a la deformación y transpirables permiten un fácil mantenimiento y garantizan una larga durabilidad.  </p>
+                        <div class="cuadro__imagen--espacio">
+                          <img img class="cuadro__imagen" src="../sources/accesorio6.jpg" alt="notebook full full">   
+                        </div>
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li>-Silla regulable ideal para gaming por su comodidad, Fabricada en piel sintética (PU), 5 Ruedas de gran resistencia, Peso máximo 150 kg</li>
+                            <li>Cojín ajustable en altura, Soporte cervical, Soporte lumbar, Altura regulable (44-54 cm)</li>
+                            <li>Soporte de antebrazo de 34 cm, Altura del asiento regulable 129-139 cm, Respaldo 85 cm, Profundidad de la silla 50 cm</li>
+                          </ul>
+                          <p class="cuadro--precio--titulo"> En promoción !! </p>
+                          <p class="cuadro--precio--oferta"> $51.000</p>
+                        </div>
+                    </div>
+                </div> 
         </section>
-        <section class="cuadro letra ">
-            <div>
-                <p class="producto__titulo">HP 5010</p >
-                    <img src="../sources/impresora.jpg" alt="imagen de monitor">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
+
+        <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p> Ubicacion para retirar en nuestro local >>></p> <iframe class="atencionCliente__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.4950518416895!2d-64.1893494853975!3d-31.400483902623794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298698cbcf285%3A0x4b7887386db6b9b1!2sSmarts%20Tienda%20Tecno!5e0!3m2!1ses-419!2sar!4v1655319544451!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+              </div>
             </div>
-            <div>
-                <p class="producto__titulo">HP 5010</p >
-                    <img src="../sources/impresora.jpg" alt="imagen de monitor">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <img class="atencionCliente__imagen" src="../sources/camioncito.png" alt="imagen de entrega">
+                <p>Envios a todo el país</p>
+              </div>
+              <div class="panel-body">
+                <img class="atencionCliente__imagen" src="../sources/tarjeta.png" alt="pago en cuotas">
+                <p>Ahora 12. En todos los productos</p>
+              </div>
+              <div class="panel-body">
+                <img class="atencionCliente__imagen" src="../sources/whatsapp.png" alt="whats app">
+                <p>Atencion personalizada</p>
+              </div>
             </div>
-            <div>
-                <p class="producto__titulo">HP 5010</p >
-                    <img src="../sources/impresora.jpg" alt="imagen de monitor">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
-            </div>
-        </section>
-        <section class="ubicacion letra">
-            <div class="ubicacion__propiedades">
-                <p> Ubicacion para retirar en nuestro local >>></p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.4950518416895!2d-64.1893494853975!3d-31.400483902623794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298698cbcf285%3A0x4b7887386db6b9b1!2sSmarts%20Tienda%20Tecno!5e0!3m2!1ses-419!2sar!4v1655319544451!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-            </div>
-        </section>
+          </div>
     </main>
 
     <footer>
-            <h2>Contactanos por cualquier consulta, computadoras personalizadas, service, etc.</h2>
-            <form method="post">
-                <div>
-                    <label> Nombre</label>
-                    <input type ="text" name="firstname">
-            
-                    <label> Apellido</label>
-                    <input type="text" name="lastname">
+      <form action="/action_page.php" class="formularioConsulta">
+          <div>
+            <div class="form-group">
+              <p for="text">Ingrese aqui sus datos y consulta y nos contactaremos con usted a la brevedad</p>
+              <label for="text">Nombre y apellido: </label>
+              <input type="text" class="form-control" id="surname">
+            </div>
+            <div class="form-group">
+              <label for="text" >Email:</label>
+              <input type="text" class="form-control" id="surname">
+            </div>
+            <div class="form-group">
+              <label for="comment">comentarios:</label>
+              <textarea class="form-control" cols="20" rows="10"  id="comment"></textarea>
+            </div>
+              <button type="submit" class="btn btn-default">Enviar</button>
+          </div>
+      </form>
 
-                </div>
-                <div>
-                    <label> telefono</label>
-                    <input type="number" name="lastname">
-          
-                    <label>Correo electronico</label>
-                    <input type="email" name="lastname">
-                </div>
-          
-                <div>
-                    <label>comentarios</label>
-                    <textarea name="comentarios" placeholder="escribinos y nos pondremos en contacto" rows="5" cols="60" maxlength="200"></textarea>
-                    <input type="submit" value="Enviar">
-                </div>
-            
-            </form>
-
-        </div>
-
-    </footer>
+  </footer>
 </body>
 </html>

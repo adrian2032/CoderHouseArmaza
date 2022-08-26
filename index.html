@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Latest compiled and minified CSS -->
+    <title> Document</title> 
+     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -15,57 +15,135 @@
 </head>
 <body>
     <header>
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html"> Inicio</a>
-                    </div>    
-                    <ul class="nav navbar-nav">
-                        <li><a href="pages/pc_escritorio.html">PC escritorio</a></li>
-                        <li><a href="pages/accesorios.html"> Accesorios</a></li>
-                        <li><a href="pages/notebook.html">Notebook</li>
-                        <li><a href="pages/monitores.html">Monitores</li>
-                    </ul>
-                </div>
-            </nav> 
+  <!-- Grey with black text -->
+      <nav class="barraNavegacion">
+          <div class="barraNavegacion_item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </div>
+          <div class="barraNavegacion__item">
+            <a class="barraNavegacion__link" href="/pages/accesorios.html">Accesorios</a>
+          </div>
+          <div class="barraNavegacion__item">
+            <a class="barraNavegacion__link" href="/pages/monitores.html">Monitores</a>
+          </div>
+          <div class="barraNavegacion__item">
+            <a class="barraNavegacion__link" href="/pages/pc_escritorio.html">Pc de escritorio</a>
+          </div>
+      </nav>
     </header>
 
-    <main class="main">
-        <h1>Nuestras ofertas!</h1>
-        <section class="row">
-            <div>
-                <h1>Nuestras ofertas!</h1>
-            </div>
-                    <div class="col-md-4 col-sm-6 col-xs-10  letra ">
-                        <p class="producto__titulo">Kanji Slim Tamura</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
-                        <img class="cuadro__imagen" src="sources/notebook.jpg" alt="notebook marca kanji">
+    <main  class="cuadro">
+      <section>
+        <div class="row intro">
+          <h2 class="col-xs-12"> Nuestras ofertas</h2>
+        </div>
+
+        
+      </section>
+      <section class="row cuadro">
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo">Notebook Acer Aspire 3 15,6 Core I5 8gb 512 Ssd</p>
+                        <p class="producto--descripcion">Calidad que entra por los ojos! diseño elegante y superior, pantalla de alta definicion con panel IPS recomendado para creadores de contenido, colores excepcionales y mayores angulos de vision. Recomendada para diseño grafico y fotografia. </p>
+                        <div class="cuadro__imagen--espacio">
+                          <img class="cuadro__imagen" src="sources/notebook1.jpg" alt="notebook marca kanji">
+                        </div>
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li> Procesador Marca: intel, Modelo: i5  1035G1, Nucleos: 4, Frecuencia Maxima: 3.6Ghz</li>
+                            <li>Almacenamiento: Capacidad:  512 GB SSD, Expansion: espacio para disco sata 2.5"</li>
+                            <li>Puertos: 2 x USB 3.0, 1 x USB 2.0, Hdmi 1.4, Jack 3,5 (audio y microfono)</li>
+                          </ul>
+                          <p class="cuadro--precio--titulo"> Precio </p>
+                          <p class="cuadro--precio"> $172.000</p>
+                        </div>
+                </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo">.Notebook Lenovo V15 15,6 Pentium N5030 4gb 240gb Nvme  </p>
+                        <p class="producto--descripcion"> *todos los equipos se entregan con sistema operativo instalado y programas basicos para el uso.</p>
+                        <div class="cuadro__imagen--espacio">
+                          <img img class="cuadro__imagen" src="sources/notebook2.jpg" alt="notebook marca acer">   
+                        </div>
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li>Memoria Ram: Capacidad: 4Gb, Tecnologia: DDR4, Slot disponible: NO (4gb soldados)</li>
+                            <li>Puertos: 2 x USB 3.2, 1 x USB 2.0, 1 x USB 3.1 Type-C, 1 x Hdmi 1.4, 1 x Jack 3,5 (audio y microfono) </li>
+                            <li>Procesador: Intel Pentium</li>
+                            <li>Conectividad: Wifi 5, Bluetooth: 5.1 </li>
+                          </ul>
+                          <p class="cuadro--precio--titulo"> Precio </p>
+                          <p class="cuadro--precio">$82.000</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-10 letra ">
-                        <p class="producto__titulo">Acer FHD </p>
-                        <p>Lorem ipsum dolor sit amert, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
-                        <img img class="cuadro__imagen" src="sources/notebookACER.jpg" alt="notebook marca acer">   
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo">Notebook bangho 15,6 hd core i3 10110u 8gb 240gbssd</p>
+                        <p class="producto--descripcion">*todos los equipos se entregan con sistema operativo instalado y programas basicos para el uso. </p>
+                        <div class="cuadro__imagen--espacio">
+                          <img img class="cuadro__imagen" src="sources/notebook3.jpg" alt="notebook  con procesador ryzen">
+                        </div>  
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li>Procesador: Marca: Intel, Modelo: core i3-10110U, Nucleos: 2, Frecuencia Maxima: 4.10Ghz</li>
+                            <li>Puertos: 2 x USB 3.2, 1 x USB 2.0, 1 x USB 3.1 Type-C, 1 x Hdmi 1.4, 1 x Jack 3,5 (audio y microfono), lector de tarjeta micro SD </li>
+                            <li>Memoria Ram: capacidad: 8gb, tecnologia: DDR4</li>
+                            <li>Conectividad: Wifi, Bluetooth, ethernet </li>
+                          </ul>
+                          <p class="cuadro--precio--titulo"> Precio </p>
+                          <p class="cuadro--precio"> $113.000</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-10 letra ">
-                        <p class="producto__titulo">Pc amd Ryzen</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
-                        <img img class="cuadro__imagen" src="sources/notebookASUS.jpeg" alt="notebook  con procesador ryzen">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo"> Notebook Gamer Aero 5 15.6 Uhd Oled I7-12700h 16gb Ram </p>
+                        <p class="producto--descripcion">Mientras que el notebook convencional posee componentes que tienen un grado de obsolescencia mayor, los notebooks gamers están compuestos de partes que resisten más y tienen una vida útil más extensa. Su procesador, por lo general, es de última generación y garantiza varios años de utilidad. Ademas de obtener graficos y rendimientos de mayor calidad </p>
+                        <div class="cuadro__imagen--espacio">
+                          <img img class="cuadro__imagen" src="sources/notebook4.jpg" alt="notebook marca asus">   
+                        </div>
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li>Procesador: Marca: Intel, MOdelo: i7-12700H, Nucleos: 14, Frecuencia maxima: 4.7Ghz</li>
+                            <li>Memoria Ram: Capacidad: 16gb, Tecnologia: DDR4</li>
+                            <li> Puertos: 3x USB 3.2, 1x Mini displayport, 1x Thunderbolt 4 (USB-C) , 1x HDMI 2.1, 1x Ethernet (RJ-45), 1x jack (3.5mm), Lector de tarjetas SD</Li>
+                            <li> Graficos:  NVIDIA GeForce RTX 3070 Ti 8GB GDDR6</li>
+                          </ul>
+                          <p class="cuadro--precio--titulo"> Precio </p>
+                          <p class="cuadro--precio"> $532.000</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-10 letra ">
-                        <p class="producto__titulo"> Noteebok lenovo </p>
-                        <p>Lorem ipsum dolor sit amert, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
-                        <img img class="cuadro__imagen" src="sources/notebookbangho.jpg" alt="notebook marca asus">   
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo"> Notebook Acer 15,6 Fhd Ryzen 5 3500u 8gb </p>
+                        <p class="producto--descripcion">Potencia y calidad gracias a su procesador ryzen 5, posee almacenamiento dual y graficos integrados de alto rendimiento RX VEGA, ideal para uso hogareño, oficina y gaming basico </p>
+                        <div class="cuadro__imagen--espacio">
+                          <img class="cuadro__imagen" src="sources/notebook5.jpg" alt="notebook marca lenovo">
+                        </div>
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li>Procesador: Marca: AMD, Modelo: Ryzen 5 3500U, Nucleos: 4, Frecuencia Maxima: 3.7Ghz</li>
+                            <li>Puertos: 2 x USB 3.2, 1 x USB 2.0, 1 x USB 3.1 Type-C, 1 x Hdmi 1.4, 1 x Jack 3,5 (audio y microfono), lector de tarjeta micro SD </li>
+                            <li>Memoria Ram: Capacidad: 8gb, Tecnologia: DDR4</li>
+                            <li>Conectividad: Wifi, Bluetooth, ethernet </li>
+                          </ul>
+                          <p class="cuadro--precio--titulo"> Precio </p>
+                          <p class="cuadro--precio"> $155.000</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-10 letra ">
-                        <p class="producto__titulo"> Nootebook BANGHO </p>
-                        <p>Lorem ipsum dolor sit amert, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
-                        <img img class="cuadro__imagen" src="sources/notebook lenovo.webp" alt="notebook marca lenovo">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 producto__espacio">
+                        <p class="producto__titulo"> Notebook Dell Inspiron 3511 15,6 Core I3 1115g4 8gb 256 Ssd </p>
+                        <p class="producto--descripcion">Los equipos Dell inspiron brindan calidad y versatilidad a tu compra, cuenta con un diseño sobrio clasico por el cual se identifica la marca. Se puede expandir tanto memoria y almacenamiento. Ideal para oficina y hogar. </p>
+                        <div class="cuadro__imagen--espacio">
+                          <img img class="cuadro__imagen" src="sources/notebook6.jpg" alt="notebook full full">   
+                        </div>
+                        <div class="cuadro--divPrecio">
+                          <ul class="cuadro--info">
+                            <li>Procesador: Marca: Intel, Nucleo: 13, nucleos: 2, frecuencia maxima: 4,1Ghz</li>
+                            <li>Memoria Ram: Capacidad: 8gb, tecnologia: DDR4, Slot disponibles-, 2 slots ocupados (32gb max)</li>
+                            <li>Puertos: 1x HDMI 1.4, Lector de tarjetas SD, 2 X USB 3.1, 1 x USB 2.0, 1x jack(audio y microfono)</li>
+                            <li>Conectividad: Wifi, Bluetooth </li>
+
+                          </ul>
+                          <p class="cuadro--precio--titulo"> En promoción !! </p>
+                          <p class="cuadro--precio--oferta"> $125.000</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-10 letra ">
-                        <p class="producto__titulo">Nootebook gammer </p>
-                        <p>Lorem ipsum dolor sit amert, consectetur adipiscing elit. Pellentesque turpis quam, varius sit amet volutpat eu, pulvinar malesuada lectus. Fusce facilisis ante quis ex iaculis, ac ultrices odio pretium. </p>
-                        <img img class="cuadro__imagen" src="sources/notebookIDEAPAD.jpg" alt="notebook full full">   
-                    </div>
+                </div> 
         </section>
 
         <div class="panel-group">
@@ -92,23 +170,25 @@
     </main>
 
     <footer>
-        <form action="/action_page.php">
+      <form action="/action_page.php" class="formularioConsulta">
+          <div>
             <div class="form-group">
-                <p><label>Contactanos por cualquier consulta, computadoras personalizadas, service, etc.</label></p>
-                <label for="text">Nombre</label>
-                <input type="text" class="form-control" id="name">
-            </div>
-            <div class="form-group">
-              <label for="text">Apellido:</label>
+              <p for="text">Ingrese aqui sus datos y consulta y nos contactaremos con usted a la brevedad</p>
+              <label for="text">Nombre y apellido: </label>
               <input type="text" class="form-control" id="surname">
             </div>
             <div class="form-group">
-                <label for="comment">comentarios:</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
-              </div>
-            <button type="submit" class="btn btn-default">Enviar</button>
-          </form>
+              <label for="text" >Email:</label>
+              <input type="text" class="form-control" id="surname">
+            </div>
+            <div class="form-group">
+              <label for="comment">comentarios:</label>
+              <textarea class="form-control" cols="20" rows="10"  id="comment"></textarea>
+            </div>
+              <button type="submit" class="btn btn-default">Enviar</button>
+          </div>
+      </form>
 
-    </footer>
+  </footer>
 </body>
 </html>
