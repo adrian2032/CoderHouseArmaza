@@ -24,16 +24,16 @@
 
 .producto--descripcion {
   font-size: small;
-  height: 16rem;
+  height: 12rem;
   text-align: center; }
 
 @media (max-width: 768px) {
   .producto--descripcion {
-    height: 8rem; } }
+    height: 7rem; } }
 
 @media (max-width: 468px) {
   .producto--descripcion {
-    height: 12rem; } }
+    height: 11rem; } }
 
 @media (min-width: 768px) {
   .producto__espacio--monitor {
@@ -45,21 +45,21 @@
   text-align: start; }
 
 .producto__espacio {
-  height: 60rem; }
+  height: 66rem; }
 
 @media (max-width: 768px) {
   .producto__espacio {
     border-top: 0.16rem solid black;
     padding: 0.3rem;
     margin-top: 0.6rem;
-    height: 54rem; } }
+    height: 50rem; } }
 
 @media (max-width: 468px) {
   .producto__espacio {
     border-top: 0.16rem solid black;
     padding: 0.3rem;
     margin-top: 0.6rem;
-    height: 58rem; } }
+    height: 60rem; } }
 
 .producto__titulo {
   text-align: center;
