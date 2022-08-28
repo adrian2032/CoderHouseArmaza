@@ -169,12 +169,6 @@
 }
 
 
-@media(max-width:468px){
-    .cuadro--precio--titulo{
-        @include tituloPrecio($colorBG, 2rem, center )
-    }
-}
-
 .intro{
     text-align: center;
 }

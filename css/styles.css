@@ -125,13 +125,6 @@
   text-align: left;
   font-weight: bold; }
 
-@media (max-width: 468px) {
-  .cuadro--precio--titulo {
-    font-size: 2rem;
-    color: rgba(64, 64, 212, 0.598);
-    text-align: center;
-    font-weight: bold; } }
-
 .intro {
   text-align: center; }
 
