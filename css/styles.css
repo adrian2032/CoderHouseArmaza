@@ -29,7 +29,7 @@
 
 @media (max-width: 768px) {
   .producto--descripcion {
-    height: 9rem; } }
+    height: 15rem; } }
 
 @media (max-width: 468px) {
   .producto--descripcion {
@@ -128,24 +128,34 @@
 .intro {
   text-align: center; }
 
-.banner img {
-  width: 100%;
-  height: auto; }
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to left, lightgray, PINK); }
+
+.banner p {
+  font-weight: bold; }
+
+.banner__marca {
+  font-size: x-large; }
 
 .navegacion__icono {
   width: 60px;
   height: 60px; }
 
+a {
+  color: rgba(64, 64, 212, 0.598); }
+
 .barraNavegacion {
-  display: grid;
-  text-align: center;
-  grid-template-rows: auto  auto auto auto auto;
-  background-image: linear-gradient(to left, lightgray, PINK);
-  font-size: small; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 @media (min-width: 768px) {
   .barraNavegacion {
-    grid-template-columns: auto auto auto auto auto; } }
+    flex-direction: row;
+    justify-content: space-evenly; } }
 
 body {
   overflow-x: hidden; }

@@ -1,6 +1,17 @@
-.banner img{
-    width: 100%;
-    height: auto;
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to left, lightgray, $colorNAV);
+}
+
+.banner p{
+    font-weight: bold;
+}
+
+.banner__marca{
+    font-size: x-large;
 }
 
 
@@ -9,22 +20,22 @@
     height: 60px;   
 }
 
+a{
+    color: $colorBG;
+}
+
 .barraNavegacion{
-    display:grid;
-    text-align: center;
-    grid-template-rows: auto 
-                        auto
-                        auto
-                        auto
-                        auto;
-    background-image: linear-gradient(to left, lightgray, $colorNAV);
-    font-size: $letraTamano;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    //@debug: linear-gradient(to left, lightgray, $colorNAV);
     //padding: 1rem;
     //margin: 1rem;
 }
 
 @media(min-width:768px){
     .barraNavegacion{
-    grid-template-columns: auto auto auto auto auto;
+    flex-direction: row;
+    justify-content: space-evenly;
     }
 }
