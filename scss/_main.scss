@@ -14,23 +14,23 @@
     }
 }
 
-@media(max-width:640px){
+@media(max-width:768px){
     .cuadro__imagen{
         width: 150px;
-        height: 100px;
+        height: 110px;
     }
 }
 
 .producto--descripcion{
     font-size: small;
-    height: 17rem;
+    height: 15rem;
     text-align: center;
 
 }
 
 @media(max-width:768px){
     .producto--descripcion{
-        height: 15rem;
+        height: 10rem;
     }
 }
 
@@ -42,7 +42,7 @@
 
 @media(min-width:768px){
     .producto__espacio--monitor{
-        height: 50rem;
+        height: 45rem;
     }
 }
 
@@ -53,15 +53,15 @@
 }
 
 .producto__espacio{
-    height: 66rem;
+    height: 65rem;
 }
 
 @media(max-width:768px){
     .producto__espacio{
     border-top: 0.16rem solid black;
-    padding: 0.3rem;
+    padding: 1rem;
     margin-top: 0.6rem;
-    height: 55rem;
+    height: 58rem;
 
     }
 }
@@ -69,9 +69,9 @@
 @media(max-width:468px){
     .producto__espacio{
         border-top: 0.16rem solid black;
-        padding: 0.3rem;
+        padding: 0.8rem;
         margin-top: 0.6rem;
-        height: 63rem;
+        height: 61rem;
     }
 }
 
@@ -118,6 +118,20 @@
 .atencionCliente__maps{
     width: 300px;
     height: 300px;
+}
+
+.atencionCliente{
+    display: flex;
+    flex-direction: row;
+    row-gap: 2rem;
+    justify-content: space-evenly
+}
+
+@media(max-width:768px){
+    .atencionCliente{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .cuadro{

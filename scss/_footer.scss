@@ -1,12 +1,13 @@
 @import "variables";
 
 .formularioConsulta {
-    padding: 1rem;
+    padding: 2rem;
     background-color: $colorBG;
     font-family: $letra; 
     display: grid;
     grid-template-columns: auto;
     justify-items: start;
+    
 
   }
 
